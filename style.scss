@@ -1,0 +1,23 @@
+@use "./modules/wrapper.scss";
+@use "./modules/modal.scss";
+@use "./modules/card.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+background: url(./images/image.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1}
+}
+

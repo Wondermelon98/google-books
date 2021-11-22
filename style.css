@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.main {
+  top: 35%;
+  left: 9%;
+  position: absolute;
+  font-weight: normal;
+}
+.main__title {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-size: 4rem;
+}
+.main__title--cycling {
+  font-style: italic;
+}
+.main__search-box {
+  position: relative;
+}
+.main__btn {
+  position: absolute;
+  top: 55%;
+  right: 25%;
+}
+.main__btn:hover {
+  cursor: pointer;
+}
+.main__search-bar {
+  width: 400px;
+  display: flex;
+  border: none;
+  padding-top: 25px;
+  color: #fff;
+  background: none;
+  border-bottom: white solid 3px;
+  font-size: 1.25rem;
+}
+.main__search-bar::placeholder {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.main__search-bar:focus {
+  border: none;
+  outline: none;
+  border-bottom: white solid 3px;
+}
+
+.modal {
+  display: none;
+  font-family: "Playfair Display";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 55%;
+  height: 45%;
+  width: 100%;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.modal__exit {
+  left: 2.7%;
+  position: absolute;
+  top: 5%;
+}
+.modal__result-text {
+  padding: 50px;
+  font-size: 1.5rem;
+  margin: 0px;
+  font-style: italic;
+}
+.modal__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  max-height: 80%;
+  max-width: 100vw;
+  overflow-y: hidden;
+  overflow-x: auto;
+  position: absolute;
+  bottom: 0%;
+}
+.modal__grid::-webkit-scrollbar {
+  height: 8px;
+}
+.modal__grid::-webkit-scrollbar-thumb {
+  background: #e4dbdb;
+  border-radius: 6px;
+}
+
+.card {
+  text-align: center;
+  padding: 50px;
+  font-family: "Playfair Display";
+}
+.card__content {
+  text-align: center;
+}
+.card__content__title {
+  font-weight: bold;
+}
+.card__thumbnail {
+  border-radius: 16px;
+  transition: transform 0.5s;
+  padding-bottom: 10px;
+}
+.card__thumbnail:hover {
+  transform: scale(1.1);
+}
+
+html {
+  background: url(./images/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

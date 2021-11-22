@@ -1,0 +1,21 @@
+.card {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Playfair Display';
+    &__content {
+        text-align: center;
+        &__title {
+            font-weight: bold;
+        }
+    }
+    &__thumbnail {
+        border-radius: 16px;
+        transition: transform 0.5s;
+        padding-bottom: 10px;
+        &:hover {
+            transform: scale(1.1);
+            // transform: translateY(-10px);
+        }
+    }
+    
+}

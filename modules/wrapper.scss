@@ -1,0 +1,45 @@
+.main {
+    top: 35%;
+    left: 9%;
+    position: absolute;
+    font-weight: normal;
+    &__title {
+        margin: 0;
+        font-family: 'Playfair Display';
+        font-size: 4rem;
+        &--cycling {
+            font-style: italic;
+        }
+    }
+    &__search-box {
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        top: 55%;
+        right: 25%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__search-bar {
+        // position: absolute;
+        width: 400px;
+        display: flex;
+        border: none;
+        padding-top: 25px;
+        color: #fff;
+        background: none;
+        border-bottom: white solid 3px;
+        font-size: 1.25rem;
+        &::placeholder {
+            color: #fff;
+            font-size: 1.25rem;
+        }
+        &:focus {
+            border: none;
+            outline: none;
+            border-bottom: white solid 3px;
+        }
+    }
+}
